@@ -1,0 +1,46 @@
+.complexe-calculator {
+  width: 20%;
+  background-color: black;
+  color: white;
+  .input-area {
+    display: flex;
+    background-color: grey;
+    width: 100%;
+    height: 60px;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .action {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    .number-area {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center; /* Centre horizontalement */
+      //   align-items: center; /* Centre verticalement */
+      #zero {
+        grid-column: span 3;
+      }
+    }
+    .operator-area {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .btn-reset {
+      width: 100%;
+      grid-column: span 2;
+    }
+  }
+}
+.numberButton,
+.operationButton,
+.btn-reset {
+  width: 100%;
+  font-size: 1.5rem;
+  color: grey;
+  border-color: grey;
+}
