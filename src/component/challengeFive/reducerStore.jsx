@@ -2,7 +2,9 @@ const initialState = {
   texts: [],
 };
 
-const reducer = (state, action) => {
+const makeCalcul = (state, action) => {
+
+
   switch (action.type) {
     case "ADD_TEXT":
       return {
@@ -19,4 +21,4 @@ const reducer = (state, action) => {
   }
 };
 
-export { initialState, reducer };
+export { initialState, makeCalcul };

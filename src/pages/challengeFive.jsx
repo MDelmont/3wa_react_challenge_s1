@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-import { initialState, reducer } from "../component/challengeFive/reducerStore";
+import { initialState, makeCalcul } from "../component/challengeFive/reducerStore";
 import FormText from "../component/challengeFive/formText";
 import HistoryText from "../component/challengeFive/historyText";
 
@@ -8,7 +8,9 @@ import "../assets/styles/challengeFive.scss";
 export const TextContext = createContext();
 
 function Challengefive() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const [state, dispatch] = useReducer(makeCalcul, initialState);
+
 
   return (
     <div className="challengefive">
